@@ -27,5 +27,16 @@ public class TestBankAccount {
 		  
 		  Assert.assertEqulas(5.0,amount);
 	  }
+	  
+	  
+	   @Test
+	 public void testTestDebits3(){
+		  
+		  BankAccount baccount =  new BankAccount(10);
+		  
+		  double amount = baccount.debit(5);
+		  
+		  Assert.assertEqulas(5.0,amount);
+	  }
 
 }
